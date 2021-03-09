@@ -7,36 +7,237 @@
         <meta name="description" content="Website sobre Dengfeng">
         <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico"/>
         <title>DENGFENG</title>
+
+        <style type="text/css">
+          
+          fieldset.elist, input[type="text"], input[type="email"],input[type="number"],input[type="date"], textarea, select, option, fieldset.elist ul, fieldset.elist > legend, fieldset.elist input[type="text"], fieldset.elist > legend:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+        
+      
+          textarea, input[type="text"], input[type="email"],input[type="number"],input[type="date"], fieldset.elist ul, select, fieldset.elist > legend {
+            border: 2px #cccccc solid;
+            border-radius: 10px;
+          }
+
+        
+          
+          input[type="text"],input[type="email"],input[type="number"],input[type="date"], fieldset.elist, select, fieldset.elist > legend {
+            height: 32px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 14px;
+          }
+          
+          input[type="text"]:hover, textarea:hover, select:hover, fieldset.elist:hover > legend {
+            background-color: #ddddff;
+          }
+          
+          
+          input[type="text"],input[type="email"],input[type="number"],input[type="date"],  fieldset.elist {
+            width: 316px;
+          }
+
+          
+          fieldset {
+            border: 2px #ff5100 solid;
+            border-radius: 10px;
+          }
+          
+          
+          fieldset.elist {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            overflow: visible;
+            padding: 0;
+            margin: 0;
+            border: none;
+          }
+          
+          fieldset.elist ul {
+            position: absolute;
+            width: 100%;
+            max-height: 320px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: transparent;
+          }
+          
+          
+          </style>
+          <!--Design do form-->
+
     </head>
-    <body style="background-color:#eef7ce;
-                 background-image: linear-gradient(to right, rgb(247, 241, 232) 1px, transparent 1px);
-                 background-size: 10px 10px;
-                 background-repeat: repeat-10px;">
-    
-        <h1 style="color: black;
-                   size: 20px;
-                   text-align: center;">DENGFENG</h1>
+    <body style="background-color:#e9d8ce;">
+
+
+    <div style="background-color:rgb(67, 92, 138);;
+                margin-top: -20px;
+                height: 350px;">
+      <h1 style="color: rgb(255, 255, 255);
+                 size: 20px;
+                 text-align: center;
+                 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">DENGFENG</h1>
+
+
+      <img src="img/300px.jpg"
+           style="margin-left: 530px;" >
+
+      <br>
+        <a href= index.html style="margin-left: 140px; font-size: 30px; color: #ffffff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Introdução | </a>
+        <a href= local.html style="font-size: 30px; color: #ffffff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Localização | </a>
+        <a href= multimedia.html style="font-size: 30px; color: #ffffff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Multimédia | </a>
+        <a href = info.html style="font-size: 30px; color: #ffffff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Informações | </a>
+        <a href = quizz.html style="font-size: 30px; color: #ffffff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Quizz |</b></a>
+        <a href = comentarios.html style="font-size: 30px; color: #ffffff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Comentários |</a>
+        <a href = ../index.html style="font-size: 30px; color: #ffffff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Home</a>
+    </div>
+       
         
-        
-        <img src="img/imagem300.jpg"
-             style="margin-left: 530px;" >
-        <br>
-        <a href= index.html style="margin-left: 160px;
-                  font-size: 30px;">Introdução | </a>
-        <a href= local.html style="font-size: 30px;">Localização | </a>
-        <a href= multimedia.html style="font-size: 30px;"> Multimédia | </a>
-        <a href = info.html style="font-size: 30px;"><b>Informações | </b></a>
-        <a href = ../quizz.html style="font-size: 30px;">Quizz |</a>
-        <a href = ../comentarios.html style="font-size: 30px;">Comentários |</a>
-        <a href = ../index.html style="font-size: 30px;">Home</a>
-<h3 style="text-align: center;">Introdução</h3>
-<fieldset>
-    <legend>Dados Pessoais:</legend>
+<h3 style="text-align: center;">Quiz</h3>
+
+<form>
+<fieldset style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <legend><b>Dados Pessoais:</b></legend>
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome"><br><br>
+    <input type="text" id="nome" autocomplete="name" maxlength="10" name="nome" autofocus required><br><br>
     <label for="apelido">Apelido:</label>
-    <input type="text" id="apelido" name="apelido"><br><br>
+    <input type="text" id="apelido" name="apelido" maxlength="10" autocomplete="nickname" required><br><br>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
+    <input type="email" placeholder="email@gmail.com" id="email" name="email" autocomplete="email" multiple required><br><br>
+    <input type="image" src="img/next.png" width="100px" height="100px" value="Submit">
    </fieldset>
+   <br><br>
+</form>
+
+<form>
+   <fieldset style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <legend><b>Quiz sobre DengFeng:</b> </legend>
+    <br>
+    <label for="pergunta1">Quantos habitantes tem dengfeng ?</label>
+    <input type="text" maxlength="6" id="pergunta1" name="pergunta1" output="630.000"  required><br><br>
+    <br>
+    <hr>
+    <label for="pergunta2">Que arte marcial se originou em dengfeng?</label>
+    <div>
+        <input type="radio"  name="format" id="arte" value="arte" checked>
+        <label for="arte">Karate shotokan</label>
+      </div>
+      <div>
+        <input type="radio"  name="format" id="arte1" value="arte1" >
+        <label for="arte1">Kung fu shoalin</label>
+      </div>
+      <div>
+        <input type="radio"  name="format" id="arte2" value="arte2">
+        <label for="arte2">Tai chi chuan</label>
+      </div>
+    <br>
+    <hr>
+    <label for="pergunta3">Para além das artes marciais, o que se mais se destaca na cidade?</label>
+    <div>
+        <input type="checkbox" name="format" id="temo" size="40px" value="temo" checked>
+        <label for="arte">Templos</label>
+      </div>
+      <div>
+        <input type="checkbox" name="format" id="temo1" value="temo1">
+        <label for="temo1">Montanhas</label>
+      </div>
+      <div>
+        <input type="checkbox" name="format" id="temo2" value="temo2">
+        <label for="temo2">Cultura</label>
+      </div>
+      <br>
+      <hr>
+      <label for="pergunta4">Em que data o Monumento Histórico de Dengfeng foi inscrito na UNESCO </label>
+      <input type="date" id="pergunta4" name="pergunta4"  required><br><br>
+      <hr>
+      <label for="pergunta5">Escolha as cores que representam o país de dengfeng</label>
+      <div>
+        <input type="color" id="cor1" name="cor1"
+               value="#FFFFFF">
+        <label for="cor1">Primeira</label>
+    </div>
+    <br>
+    <div>
+        <input type="color" id="cor2" name="cor2"
+               value="#FFFFFF">
+        <label for="cor2">Segunda</label>
+    </div>
+    <br>
+    <hr>
+    <label for="pergunta6">Quantos km tem a área de dengfeng</label>
+    <input type="number" id="pergunta6" name="pergunta6" required><br><br>
+    <hr>
+    <label for="pergunta6">A Dengfeng está a ____m acima do nível do mar (min:0 e max: 500)</label>
+    <input type="range" min="0" max="500" step="0.5" list="tickmarks">
+    <datalist id="tickmarks">
+      <option value="0" label="0">
+      <option value="50">
+      <option value="100">
+      <option value="150">
+      <option value="200">
+      <option value="250" label="250">
+      <option value="300">
+      <option value="350">
+      <option value="400">
+      <option value="450">
+      <option value="500" label="500">
+    </datalist>
+    <br><br>
+    <input type="submit" method="post" action="elisa.m.morgado@gmail.com" value="Submit">
+   </fieldset>
+
+   <div style="background-color: rgb(67, 92, 138); margin-top: 25px;">
+    <svg style="margin-left: 70px; margin-top:20px" width="1196" height="60">
+        <image  href="img/menu.jpg" width="100%" height="100%">
+        </image>
+        <a href="https://lab1em.herokuapp.com/lab3/index.html">
+            <polygon opacity="0.0" points="0,0 198,1 198,39 0,39" />
+            <rect x="-15" y="50" width="200" height="10">
+                <animate id="a1" attributeName="fill" from="red" to="blue" dur="10s" />
+            </rect>
+        </a>
+        <a href="https://lab1em.herokuapp.com/lab3/local.html">
+            <polygon opacity="0.0" points="201,0 406,1 406,37 201,37" />
+            <rect x="185" y="50" width="200" height="10">
+                <animate id="a2" attributeName="fill" from="blue" to="yellow" begin="a1.end" dur="10s" />
+            </rect>
+        </a>
+        <a href="https://lab1em.herokuapp.com/lab3/multimedia.html">
+            <polygon opacity="0.0" points="411,1 607,1 607,39 411,39" />
+            <rect x="385" y="50" width="200" height="10">
+                <animate id="a3" attributeName="fill" from="yellow" to="pink" begin="a2.end" dur="10s" />
+            </rect>
+        </a>
+        <a href="https://lab1em.herokuapp.com/lab3/info.html">
+            <polygon opacity="0.0" points="614,0 827,1 827,40 614,40" />
+            <rect x="585" y="50" width="208" height="10">
+                <animate id="a4" attributeName="fill" from="pink" to="brown" begin="a3.end" dur="10s" />
+            </rect>
+        </a>
+        <a href="https://lab1em.herokuapp.com/lab3/quizz.html">
+            <polygon opacity="0.0" points="831,1 931,1 931,39 831,39" />
+            <rect x="793" y="50" width="100" height="10">
+                <animate id="a5" attributeName="fill" from="brown" to="purple" begin="a4.end" dur="10s" />
+            </rect>
+        </a>
+        <a href="https://lab1em.herokuapp.com/lab3/comentarios.html">
+            <polygon opacity="0.0" points="936,1 1152,1 1152,40 936,40" />
+            <rect x="893" y="50" width="210" height="10">
+                <animate id="a6" attributeName="fill" from="purple" to="green" begin="a5.end" dur="10s" />
+            </rect>
+        </a>
+        <a href="https://lab1em.herokuapp.com/index.html">
+            <polygon opacity="0.0" points="1156,1 1249,1 1249,40 1156,40" />
+            <rect x="1103" y="50" width="100" height="10">
+                <animate id="a7" attributeName="fill" from="green" to="blue" begin="a6.end" dur="10s" />
+            </rect>
+        </a>
+
+    </svg>
+
+</div>
+</form>
