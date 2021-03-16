@@ -1,0 +1,333 @@
+<link rel="stylesheet" href="estilos.css">
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Elisa Morgado">
+        <meta name="keywords" content="dengfeng, programação web">
+        <meta name="description" content="Website sobre Dengfeng">
+        <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
+        <title>DENGFENG</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cambo&family=Satisfy&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <style>
+          h1{
+              font-family: 'Ubuntu Condensed', sans-serif;
+          }
+
+          * {
+              font-family: 'Cambo', serif;
+            }
+
+            footer{
+                font-family: 'Satisfy', cursive;
+            }
+         
+       </style>
+
+        <style type="text/css">
+          
+            fieldset.elist, input[type="text"], input[type="email"],input[type="number"],input[type="date"], textarea, select, option, fieldset.elist ul, fieldset.elist > legend, fieldset.elist input[type="text"], fieldset.elist > legend:after {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+            }
+          
+        
+            textarea, input[type="text"], input[type="email"],input[type="number"],input[type="date"], fieldset.elist ul, select, fieldset.elist > legend {
+              border: 2px #cccccc solid;
+              border-radius: 10px;
+            }
+  
+          
+            
+            input[type="text"],input[type="email"],input[type="number"],input[type="date"], fieldset.elist, select, fieldset.elist > legend {
+              height: 32px;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-size: 14px;
+            }
+            
+            input[type="text"]:hover, textarea:hover, select:hover, fieldset.elist:hover > legend {
+              background-color: #ddddff;
+            }
+            
+            
+            input[type="text"],input[type="email"],input[type="number"],input[type="date"],  fieldset.elist {
+              width: 316px;
+            }
+  
+            
+            fieldset {
+              border: 2px #fdfdfd solid;
+              border-radius: 10px;
+            }
+            
+            
+            fieldset.elist {
+              display: inline-block;
+              position: relative;
+              vertical-align: middle;
+              overflow: visible;
+              padding: 0;
+              margin: 0;
+              border: none;
+            }
+            
+            fieldset.elist ul {
+              position: absolute;
+              width: 100%;
+              max-height: 320px;
+              padding: 0;
+              margin: 0;
+              overflow: hidden;
+              background-color: transparent;
+            }
+            
+            
+            </style>
+            <!--Design do form-->
+
+    </head>
+    <body class="bodycoment">
+    <header class="cima">
+    <div class="cabeçalho">
+       <h1 style="color: rgb(255, 255, 255);
+                  size: 20px;
+                  text-align: center;">DENGFENG</h1>
+
+        <figure>
+        <img src="img/300px.jpg" style="margin-left: 480px;" >
+        </figure>
+
+        <br>
+        <nav >
+        <a href= index.html ><i class="material-icons">bookmark</i>Introdução |</a>
+        <a href= local.html ><i class="material-icons">pin_drop</i>Localização |</a>
+        <a href= multimedia.html ><i class="material-icons">photo_album</i>Multimédia |</a>
+        <a href = info.html ><i class="material-icons">info</i>Informações |</a>
+        <a href = quizz.html ><i class="material-icons">games</i>Quizz |</a>
+        <a href = comentarios.html ><i class="material-icons">edit</i><b>Comentários |</b></a>
+        <a href = ../index.html ><i class="material-icons">home</i>Home</a>
+        </nav>
+        
+    </div>
+    </header>
+
+    <main>
+    <section>
+    <h3>COMENTÁRIOS</h3>
+    
+    <form>
+        <fieldset>
+            <legend><b>Sua opinião:</b></legend>
+            <p>O conteúdo no website é de clara compreensão? 1(pouca) 5(muita)</p>
+            <div>
+              <input type="radio" id="1"
+               name="pontuação">
+              <label for="1">1</label>
+          
+              <input type="radio" id="2"
+               name="pontuação">
+              <label for="2">2</label>
+          
+              <input type="radio" id="3"
+               name="pontuação">
+              <label for="3">3</label>
+
+              <input type="radio" id="4"
+               name="pontuação">
+              <label for="4">4</label>
+
+              <input type="radio" id="5"
+               name="pontuação">
+              <label for="5">5</label>
+            </div>
+
+            <br><br>
+
+            <p>Como classifica o rigor da página? 1(pouca) 5(muita)</p>
+            <div>
+              <input type="radio" id="1"
+               name="pontuação">
+              <label for="1">1</label>
+          
+              <input type="radio" id="2"
+               name="pontuação">
+              <label for="2">2</label>
+          
+              <input type="radio" id="3"
+               name="pontuação">
+              <label for="3">3</label>
+
+              <input type="radio" id="4"
+               name="pontuação">
+              <label for="4">4</label>
+
+              <input type="radio" id="5"
+               name="pontuação">
+              <label for="5">5</label>
+            </div>
+
+            <br><br>
+
+            <label style="margin-top: -50px;" for="menus">É fácil aceder aos menus da página (multimedia, Informação,..):</label>
+              <select id="menus" name="respostalist" form="respostaform">
+              <option value="nao">Não</option>
+              <option value="maisOuMenos">Mais ou menos</option>
+              <option value="sim">Sim</option>
+              </select>
+            <div>
+
+            <br><br>
+            <label for="info">Sobre a informação apresentada, ela foca-se no importante:</label>
+            <select id="info" name="infolist" form="infoform">
+            <option value="nao">Não</option>
+            <option value="maisOuMenos">Mais ou menos</option>
+            <option value="sim">Sim</option>
+            </select>
+
+            <br><br>
+
+            <label for="complexo">O website está complexo e com multiplas inter-relacões (min:0 e max: 10)</label>
+            <input type="range" min="0" max="10" step="1" list="tickmarks">
+          <datalist id="tickmarks">
+            <option value="0" label="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option label="5" value="5" >
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10" label="10">
+         </datalist>
+
+          <br><br>
+
+        </div>
+        <p>O Quiz foi fácil de responder encontrando as respostas no site?</p>
+           
+              <input type="radio" id="sim"
+               name="resposta">
+              <label for="sim">Sim</label>
+          
+              <input type="radio" id="maisOuMenos"
+               name="resposta">
+              <label for="maisOuMenos">Mais ou Menos</label>
+          
+              <input type="radio" id="nao"
+               name="resposta">
+              <label for="nao">Não</label>
+
+              <br><br>
+
+            <label for="amplo">Quão amplo está o website? (min:0 e max: 10)</label>
+            <input type="range" min="0" max="10" step="1" list="tickmarks">
+          <datalist id="tickmarks">
+            <option value="0" label="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option label="5" value="5" >
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10" label="10">
+         </datalist>
+         <br><br>
+          <label>O website está original? Diga a sua opinião</label>
+          <input type="text" id="original">
+          <label>Quais mudanças teria que fazer para melhorar ainda mais o website?</label>
+          <br><br>
+          <textarea rows="10" cols="50" name="comment" form="usrform" placeholder="Escreva aqui.."></textarea>
+          
+          <br><br>
+
+          <div>
+            <label>Aconselhava o site a outras pessoas?</label>
+            <input type="radio" id="sim"
+             name="resposta">
+            <label for="sim">Sim</label>
+        
+            <input type="radio" id="maisOuMenos"
+             name="resposta">
+            <label for="talvez">Talvez</label>
+        
+            <input type="radio" id="nao"
+             name="resposta">
+            <label for="nao">Não</label>
+       
+            <br><br>
+
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+
+            <input type="hidden" id="opinioes relativas ao lab4" name="opinioes relativas ao lab4" value="1">
+
+           </fieldset>
+
+          </section>
+
+          <footer class="rodape1">
+            Elisa Morgado | 21801685 | Universidade Lusofona | 3ºano
+          </footer>
+
+           <div style="background-color: rgb(67, 92, 138); margin-top: 25px;">
+            <svg style="margin-left: 70px; margin-top:20px" width="1196" height="60">
+                <image  href="img/menu.jpg" width="100%" height="100%">
+                </image>
+                <a href="https://lab1em.herokuapp.com/lab3/index.html">
+                    <polygon opacity="0.0" points="0,0 198,1 198,39 0,39" />
+                    <rect x="-15" y="50" width="200" height="10">
+                        <animate id="a1" attributeName="fill" from="red" to="blue" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/local.html">
+                    <polygon opacity="0.0" points="201,0 406,1 406,37 201,37" />
+                    <rect x="185" y="50" width="200" height="10">
+                        <animate id="a2" attributeName="fill" from="blue" to="yellow" begin="a1.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/multimedia.html">
+                    <polygon opacity="0.0" points="411,1 607,1 607,39 411,39" />
+                    <rect x="385" y="50" width="200" height="10">
+                        <animate id="a3" attributeName="fill" from="yellow" to="pink" begin="a2.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/info.html">
+                    <polygon opacity="0.0" points="614,0 827,1 827,40 614,40" />
+                    <rect x="585" y="50" width="208" height="10">
+                        <animate id="a4" attributeName="fill" from="pink" to="brown" begin="a3.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/quizz.html">
+                    <polygon opacity="0.0" points="831,1 931,1 931,39 831,39" />
+                    <rect x="793" y="50" width="100" height="10">
+                        <animate id="a5" attributeName="fill" from="brown" to="purple" begin="a4.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/comentarios.html">
+                    <polygon opacity="0.0" points="936,1 1152,1 1152,40 936,40" />
+                    <rect x="893" y="50" width="210" height="10">
+                        <animate id="a6" attributeName="fill" from="purple" to="green" begin="a5.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/index.html">
+                    <polygon opacity="0.0" points="1156,1 1249,1 1249,40 1156,40" />
+                    <rect x="1103" y="50" width="100" height="10">
+                        <animate id="a7" attributeName="fill" from="green" to="blue" begin="a6.end" dur="10s" />
+                    </rect>
+                </a>
+        
+            </svg>
+        
+        </div>
+           
+        </form>
+      </main>

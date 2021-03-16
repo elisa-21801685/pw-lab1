@@ -1,0 +1,187 @@
+
+ 
+ h3{
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .titulo{
+    margin-top: 20px;
+  }
+
+  .rodape{
+    margin-left: 890px;
+  }
+  .rodape1{
+    margin-left: 890px;
+    margin-top: 30px;
+  }
+
+  .rodape3{
+    margin-top: 250px;
+    margin-left: 890px;
+  }
+
+.templo{
+  width: 300px; 
+  height: 300px;
+  margin-top: -310px;
+  margin-left: 700px;
+}
+
+.cima{
+  margin-top: 20px;
+}
+
+.cabeçalho{
+  background-color: rgb(67, 92, 138);
+  margin-top: -20px;
+  height: 350px;
+}
+
+.sectindex1{
+  background-color: rgba(240, 23, 34, 0.219);
+  height: 350px;
+  margin-top: -20px;
+}
+
+.sectindex2{
+  background-color: rgb(231, 231, 226);
+  height: 200px;
+  margin-top: -40px;
+}
+
+.sectindex3{
+  background-color: rgba(121, 145, 197, 0.466);
+  height: 720px;
+  margin-top: -15px;
+}
+
+.bodyinfo{
+  background-color:#fff8b8;
+}
+
+.bodylocal{
+  background-color:#c2f8c9ce;
+}
+
+.bodyquizz{
+  background-color:#e9d8ce;
+}
+
+.bodycoment{
+  background-color:#f5d1a1;
+}
+
+.sectmult1{
+  background-color: rgb(255, 212, 176);
+  height: 820px;
+}
+
+.sectmult2{
+  background-color: rgb(188, 235, 231);
+  height: 550px;
+  margin-top: -20PX;
+}
+
+.sectmult3{
+  background-color: rgba(136, 221, 115, 0.61);
+  height: 550px;
+  margin-top: 30PX;
+}
+
+.bodymulti{
+  background-color:#ebebeb;
+}
+
+nav a{
+  font-size: 28px;
+}
+
+nav{
+  margin-left: 80px;
+}
+
+nav a:link {
+  color: rgb(219, 155, 155);
+}
+
+/* visited link */
+nav a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+nav a:hover {
+  color: rgb(255, 55, 55);
+}
+
+/* selected link */
+nav a:active {
+  color: blue;
+}
+
+nav a:hover::after {
+  content:" *";
+}
+
+nav a:hover::before {
+  content:"* ";
+}
+
+.tabelahtml5:nth-child(2n) {
+  background: rgb(172, 255, 255);
+}
+
+.poema::first-letter {
+  color: #ff0000;
+  font-size: 50px;
+}
+
+input{
+  display: block;
+}
+
+#story{
+  vertical-align: inherit;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+iframe{
+  border: 2px solid rgb(142, 102, 235);
+}
+
+.shaolin{
+  margin-top: 30px;
+  margin-left: 270px;
+  position: relative;
+ 
+}
+
+.monge{
+  position: absolute;
+  width: 100px;
+  height: 130px;
+  margin-left: -160px;
+  margin-top: 370px;
+  z-index: -0.5;
+  
+}
+
+.pontape{
+  position: fixed;
+  width: 80px;
+  height: 100px;
+  margin-left: 90px;
+  margin-top: -100px;
+}
+
+.mestre{
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+}
+

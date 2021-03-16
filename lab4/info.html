@@ -1,0 +1,168 @@
+<link rel="stylesheet" href="estilos.css">
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Elisa Morgado">
+        <meta name="keywords" content="dengfeng, programação web">
+        <meta name="description" content="Website sobre Dengfeng">
+        <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
+        <title>DENGFENG</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cambo&family=Satisfy&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <style>
+            h1{
+                font-family: 'Ubuntu Condensed', sans-serif;
+            }
+
+            * {
+               font-family: 'Cambo', serif;
+              }
+
+            footer{
+                font-family: 'Satisfy', cursive;
+            }
+           
+        </style>
+    </head>
+    <body class="bodyinfo" >
+    <header class="cima">
+    <div class="cabeçalho">
+       <h1 style="color: rgb(255, 255, 255);
+                  size: 20px;
+                  text-align: center;">DENGFENG</h1>
+
+        <figure>
+        <img src="img/300px.jpg" style="margin-left: 480px;" >
+        </figure>
+
+        <br>
+        <nav>
+        <a href= index.html ><i class="material-icons">bookmark</i>Introdução |</a>
+        <a href= local.html ><i class="material-icons">pin_drop</i>Localização |</a>
+        <a href= multimedia.html ><i class="material-icons">photo_album</i>Multimédia |</a>
+        <a href = info.html ><i class="material-icons">info</i><b>Informações |</b></a>
+        <a href = quizz.html ><i class="material-icons">games</i>Quizz |</a>
+        <a href = comentarios.html ><i class="material-icons">edit</i>Comentários |</a>
+        <a href = ../index.html ><i class="material-icons">home</i>Home</a>
+        </nav>  
+        
+    </div>
+   </header>
+
+    <main>
+    <section>
+        <h3>INFORMAÇÕES</h3>
+        <p style=" text-align: center;"
+                  >Em baixo, podemos ver em detalhe a população, densidade, área, entre outros da cidade de Dengfeng</p>
+
+                  <table border="1" summary="Tabela" cellpadding="10" cellspacing="2" align="center">
+    
+                    <caption>
+                        <b>Informação sobre Dengfeng</b>
+                    </caption>
+                      <colgroup>
+                        <col bgcolor="MediumTurquoise">
+                        <col bgcolor="LightCyan">
+                        <col bgcolor="MediumTurquoise">
+                        <col bgcolor="LightCyan">
+                        <col bgcolor="MediumTurquoise">
+                        
+                      </colgroup>
+                     
+                   
+                    <thead>
+                            <th colspan="2" bgcolor="white">Demografia</th>
+                            <th colspan="2"bgcolor="white">Geografia</th>
+                            <th colspan="1"bgcolor="white">Website</th>  
+                            
+                    </thead>
+        
+                     <tbody>
+        
+                       <tr>
+                       <th colspan="1">População</th>
+                       <td>717 400</td>
+                       <th colspan="1">Área</th>
+                       <td>1220km2</td>
+                       <td bgcolor="LightCyan"><a href="https://www.dengfeng.gov.cn/" target="_blank">www.dengfeng.gov.cn</a></td>
+                       </tr>
+        
+                       <tr>
+                       <th>Densidade Populacional</th> 
+                       <td>590/km2</td>
+                       <th>Província</th> 
+                       <td>Honã</td>
+                       </tr>
+        
+                       <tr>
+                       <th>Esperança Média de Vida</th> 
+                       <td>80 anos</td>
+                       <th>País</th> 
+                       <td>China</td>
+                       </tr>
+        
+                     </tbody>
+        
+        
+                </table>
+
+                <footer class="rodape1">
+                    Elisa Morgado | 21801685 | Universidade Lusofona | 3ºano
+                </footer>
+    </section>
+        <div style="background-color: rgb(67, 92, 138); margin-top: 25px;">
+            <svg style="margin-left: 70px; margin-top:20px" width="1196" height="60">
+                <image  href="img/menu.jpg" width="100%" height="100%">
+                </image>
+                <a href="https://lab1em.herokuapp.com/lab3/index.html">
+                    <polygon opacity="0.0" points="0,0 198,1 198,39 0,39" />
+                    <rect x="-15" y="50" width="200" height="10">
+                        <animate id="a1" attributeName="fill" from="red" to="blue" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/local.html">
+                    <polygon opacity="0.0" points="201,0 406,1 406,37 201,37" />
+                    <rect x="185" y="50" width="200" height="10">
+                        <animate id="a2" attributeName="fill" from="blue" to="yellow" begin="a1.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/multimedia.html">
+                    <polygon opacity="0.0" points="411,1 607,1 607,39 411,39" />
+                    <rect x="385" y="50" width="200" height="10">
+                        <animate id="a3" attributeName="fill" from="yellow" to="pink" begin="a2.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/info.html">
+                    <polygon opacity="0.0" points="614,0 827,1 827,40 614,40" />
+                    <rect x="585" y="50" width="208" height="10">
+                        <animate id="a4" attributeName="fill" from="pink" to="brown" begin="a3.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/quizz.html">
+                    <polygon opacity="0.0" points="831,1 931,1 931,39 831,39" />
+                    <rect x="793" y="50" width="100" height="10">
+                        <animate id="a5" attributeName="fill" from="brown" to="purple" begin="a4.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/comentarios.html">
+                    <polygon opacity="0.0" points="936,1 1152,1 1152,40 936,40" />
+                    <rect x="893" y="50" width="210" height="10">
+                        <animate id="a6" attributeName="fill" from="purple" to="green" begin="a5.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/index.html">
+                    <polygon opacity="0.0" points="1156,1 1249,1 1249,40 1156,40" />
+                    <rect x="1103" y="50" width="100" height="10">
+                        <animate id="a7" attributeName="fill" from="green" to="blue" begin="a6.end" dur="10s" />
+                    </rect>
+                </a>
+        
+            </svg>
+        
+        </div>
+      </main>
+    </body>
+</html>
