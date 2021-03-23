@@ -1,0 +1,432 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+ 
+ h3{
+      text-align: center;
+  }
+
+  .titulo{
+    margin-top: 20px;
+    margin-left: 233px;
+  }
+
+  .rodape{
+    margin-left: 890px;
+  }
+  .rodape1{
+    margin-left: 890px;
+    margin-top: 30px;
+  }
+
+  .rodape3{
+    margin-top: 250px;
+    margin-left: 890px;
+  }
+
+.templo{
+  width: 300px; 
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.cima{
+  margin-top: 20px;
+}
+
+
+
+.bodycoment{
+  background-color:#f5d1a1;
+}
+
+
+
+.bodymulti{
+  background-color:#ebebeb;
+}
+
+nav a{
+  font-size: 18px;
+}
+
+
+nav a:link {
+  color: rgb(219, 155, 155);
+}
+
+/* visited link */
+nav a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+nav a:hover {
+  color: rgb(255, 55, 55);
+}
+
+/* selected link */
+nav a:active {
+  color: blue;
+}
+
+nav a:hover::after {
+  content:" *";
+}
+
+nav a:hover::before {
+  content:"* ";
+}
+
+.tabelahtml5:nth-child(2n) {
+  background: rgb(172, 255, 255);
+}
+
+.poema::first-letter {
+  color: #ff0000;
+  font-size: 50px;
+}
+
+input{
+  display: block;
+}
+
+#story{
+  vertical-align: inherit;
+  font-size: 25px;
+  margin-left: 40px;
+}
+
+iframe{
+  border: 2px solid rgb(142, 102, 235);
+}
+
+.shaolin{
+  margin-top: 30px;
+  margin-left: 270px;
+  position: relative;
+ 
+}
+
+.monge{
+  position: absolute;
+  width: 100px;
+  height: 130px;
+  margin-left: -160px;
+  margin-top: 370px;
+  z-index: -0.5;
+  
+}
+
+.pontape{
+  position: fixed;
+  width: 80px;
+  height: 100px;
+  margin-left: 180px;
+  
+}
+
+.mestre{
+  top: 130px;
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  left: 0px;
+}
+
+.titlemulti{
+  margin-top: -80px;
+}
+
+
+.foto1{
+  width: 170px;
+  height: 231px;
+  margin-left: 110px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.foto2{
+  width: 180px;
+  height: 231px;
+  margin-left: 680px;
+  border-radius: 20px;
+}
+
+.aside{
+  background-color: rgb(190, 214, 212);
+  height: 320px;
+  margin-top: 10px;
+}
+
+.apresent{
+  margin-top: -157px;
+  margin-left: 330px;
+}
+
+.aside1{
+  background-color: rgb(190, 214, 212);
+  height: 320px;
+  margin-top: 300px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 150px;
+  margin-bottom: 100px;
+  margin-top: -55px;
+}
+
+.flex-container > div {
+  background-color: rgb(79, 108, 153);
+  border: 2px solid rgba(210, 205, 223, 0.438);
+}
+
+.container{
+  height: 830px;
+  margin-top: 10px;
+}
+
+.tituloGaleria::first-letter {
+  font-style: bolt;
+  font-size: 50px;
+}
+
+.tituloGaleria{
+  font-size: 25px;
+  text-align: center;
+}
+
+.flexbox{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.St{
+  margin-left: 30px;
+  width: 300px;
+  height: 200px;
+}
+.St1{
+  margin-left: 30px;
+  width: 300px;
+  height: 200px;
+}
+
+.St1:hover{
+  border-radius: 50px;
+  border: 2px solid #ffffff ;
+}
+.St2{
+  margin-left: 30px;
+  width: 300px;
+  height: 200px;
+}
+
+.St2:hover{
+  transform: scaleX(-1);
+}
+
+
+.Ms{
+  width: 300px;
+  height: 200px;
+}
+
+.Ms:hover{
+  filter:blur(5px);
+}
+
+.Ms1{
+  width: 300px;
+  height: 200px;
+}
+
+.Ms2{
+  width: 300px;
+  height: 200px;
+}
+
+.Ms2:hover{
+  width: 350px;
+  transition: width 2s;
+}
+
+.Tm{
+  width: 300px;
+  height: 200px;
+}
+
+.Tm1{
+  width: 300px;
+  height: 200px;
+}
+
+.Tm1:hover{
+  height: 300px;
+  transition: height 2s;
+}
+
+.Tm2{
+  width: 300px;
+  height: 200px;
+}
+
+.Tm2:hover{
+  opacity: 0.5;
+}
+
+.Es{
+  width: 300px;
+  height: 200px;
+}
+
+.Es:hover{
+  filter:grayscale(100%);
+}
+
+.Es1{
+  width: 300px;
+  height: 200px;
+}
+
+.Es1:hover{
+  width: 200px;
+  height: 100px;
+  transition: width 2s, height 4s;
+}
+
+.Es2{
+  width: 300px;
+  height: 200px;
+}
+
+nav {
+  background:  rgb(67, 92, 138);;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  height: 200px;
+  position: sticky;
+  top: 0px;
+}
+
+main {
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  background-color: rgba(240, 23, 34, 0.219);
+}
+
+#sidebar {
+  background-color: rgba(240, 23, 34, 0.397);
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content1 {
+  background-color: rgb(231, 231, 226);
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content2 {
+  background-color: rgb(220, 227, 231);
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content3 {
+  background-color: rgba(97, 235, 194, 0.781);
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content4 {
+  background-color: rgb(67, 92, 138);
+  grid-area: content4;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+
+}
+
+#sidebar1 {
+  background-color: rgba(235, 51, 60, 0.685);
+  grid-area: sidebar1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  z-index: -1;
+}
+
+#aside{
+  background-color: rgb(190, 214, 212);
+  grid-area: aside;
+  height: 320px;
+}
+
+
+
+footer {
+  background: #ffffffb9;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  text-align: end;
+}
+
+.animation1{
+  width: 180px;
+  height: 150px;
+  margin-top: -100px;
+  animation-name: luta1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animation2{
+  width: 180px;
+  height: 150px;
+  margin-top: -100px;
+  animation-name: luta2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes luta1 {
+  0%   {transform: translateX(0px);}
+  100%  {transform: translateX(290px);}
+}
+
+@keyframes luta2 {
+  0%   {transform: translateX(0px);}
+  50%  {transform: translateX(-280px);}
+  100%  {transform: translateX(280px) rotate(360deg);}
+}
+
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "sidebar"
+      "content1"
+      "content2"
+      "content3"
+      "aside"
+      "footer";
+  }
+}

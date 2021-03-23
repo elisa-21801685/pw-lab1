@@ -1,0 +1,439 @@
+<link rel="stylesheet" href="estilos.css">
+<!DOCTYPE html>
+<html lang="pt">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Elisa Morgado">
+        <meta name="keywords" content="dengfeng, programação web">
+        <meta name="description" content="Website sobre Dengfeng">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
+        <title>DENGFENG</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cambo&family=Satisfy&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <style>
+            h1{
+              color: white;
+              margin-left: 20px;
+              margin-top: 20px;
+              font-size: 30px;
+              font-family: 'Ubuntu Condensed', sans-serif;
+            }
+
+            * {
+               font-family: 'Cambo', serif;
+              }
+
+            footer{
+                font-family: 'Satisfy', cursive;
+            }
+
+            
+            [name~=imagensGrandes] {
+            border: 10px solid rgb(113, 255, 156);
+            }
+
+            [class^="small"] {
+                border: 2px solid rgb(255, 113, 160);
+            }
+
+            .img300{
+              margin-left: -10px;
+              margin-top: 50px;
+            }
+
+
+            .container {
+               display: grid;
+               height: 100vh;
+               grid-template-columns: 1fr 1fr 1fr 1fr;
+               grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+               grid-template-areas:
+                "nav nav nav nav"
+                "main main main sidebar"
+                "content1 content1 content1 content1"
+                "aside aside aside aside"
+                "content2 content2 content2 content2"
+                "footer footer footer footer";
+               grid-gap: 0.2rem;
+            }
+
+            nav {
+                background:  rgb(67, 92, 138);
+                grid-area: nav;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                height: 100px;
+                position: sticky;
+                top: 0px;
+            }
+
+            main {
+                grid-area: main;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                background-color: rgb(234, 197, 255);
+            }
+
+            #sidebar {
+                background-color: rgb(213, 153, 248);
+                grid-area: sidebar;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+             }
+
+             #content1 {
+              background-color: rgb(234, 197, 255);
+                grid-area: content1;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+            }
+
+            #content2 {
+                background:  rgb(67, 92, 138);
+                grid-area: content2;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+            }
+
+            @media only screen and (max-width: 550px) {
+            .container {
+
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+                grid-template-areas:
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "content1"
+                    "aside"
+                    "content2"
+                    "footer";
+            }
+
+            .foto1{
+                width: 120px;
+                height: 160px;
+                margin-left: 15px;
+                margin-top: 50px;
+                
+            }
+
+            .foto2{
+                display: none;
+                
+            }
+
+            .apresent{
+                margin-left: 70px;
+                margin-top: -150px;
+            }
+
+            .img300{
+              margin-left: 50px;
+              margin-top: 10px;
+            }
+
+            h1 {
+                color: white;
+                margin-left: 170px;
+                margin-top: 20px;
+                font-size: 30px;
+            }
+
+            nav {
+                background: rgb(67, 92, 138);
+                grid-area: nav;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                height: 200px;
+                position: sticky;
+                top: 0px;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                margin-left: 9px;
+                text-align: center;
+            }
+
+            #content2{
+                display: none;
+            }
+
+          }
+        </style>
+
+
+        <style type="text/css">
+          
+          fieldset.elist, input[type="text"], input[type="email"],input[type="number"],input[type="date"], textarea, select, option, fieldset.elist ul, fieldset.elist > legend, fieldset.elist input[type="text"], fieldset.elist > legend:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+        
+      
+          textarea, input[type="text"], input[type="email"],input[type="number"],input[type="date"], fieldset.elist ul, select, fieldset.elist > legend {
+            border: 2px #cccccc solid;
+            border-radius: 10px;
+          }
+
+        
+          
+          input[type="text"],input[type="email"],input[type="number"],input[type="date"], fieldset.elist, select, fieldset.elist > legend {
+            height: 32px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 14px;
+          }
+          
+          input[type="text"]:hover, textarea:hover, select:hover, fieldset.elist:hover > legend {
+            background-color: #ddddff;
+          }
+          
+          
+          input[type="text"],input[type="email"],input[type="number"],input[type="date"],  fieldset.elist {
+            width: 316px;
+          }
+
+          
+          fieldset {
+            border: 2px #ff5100 solid;
+            border-radius: 10px;
+          }
+          
+          
+          fieldset.elist {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            overflow: visible;
+            padding: 0;
+            margin: 0;
+            border: none;
+          }
+          
+          fieldset.elist ul {
+            position: absolute;
+            width: 100%;
+            max-height: 320px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: transparent;
+          }
+          
+          
+        </style>
+          <!--Design do form-->
+
+     </head>
+     <div class="container">
+        <nav>
+            <h1>DENGFENG</h1>
+
+            <div class="flex-container">
+              <div>
+                <a href= index.html ><i class="material-icons">bookmark</i>Introdução | </a>
+                <a href= local.html ><i class="material-icons">pin_drop</i>Localização | </a>
+                <a href= multimedia.html ><i class="material-icons">photo_album</i>Multimédia | </a>
+                <a href = info.html ><i class="material-icons">info</i>Informações | </a>
+              </div>
+              <div>
+               <a href = quizz.html ><i class="material-icons">games</i><b>Quizz | </b></a>
+               <a href = comentarios.html ><i class="material-icons">edit</i>Comentários |</a>
+               <a href = html5-css.html ><i class="material-icons">code</i>Html5 e Css |</a>
+              </div>
+              <div>
+              <a href = ../index.html ><i class="material-icons">home</i>Home</a>
+              </div>
+            </div>        
+        </nav>
+
+        <main>
+           <h3>QUIZ</h3>
+           <form>
+            <fieldset>
+                <legend><b>Dados Pessoais:</b></legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" autocomplete="name" maxlength="10" name="nome" autofocus required>
+                <label for="apelido">Apelido:</label>
+                <input type="text" id="apelido" name="apelido" maxlength="10" autocomplete="nickname" required>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="email@gmail.com" id="email" name="email" autocomplete="email" multiple required>
+                <input type="image" src="img/next.png" width="100px" height="100px" value="Submit">
+               </fieldset>
+               <br><br>
+            </form>
+            
+         <br>
+         <br>
+        
+        </main>
+        <div id="sidebar">
+            <figure>
+                <img class="img300" src="img/300px.jpg" >
+            </figure>
+        </div>
+
+        <div id="content1">
+          <form>
+            <fieldset>
+             <legend><b>Quiz sobre DengFeng:</b> </legend>
+             <br>
+             <label for="pergunta1">Quantos habitantes tem dengfeng ?</label>
+             <input type="text" maxlength="6" id="pergunta1" name="pergunta1" output="630.000"  required><br><br>
+             <hr>
+             <label for="pergunta2">Que arte marcial se originou em dengfeng?</label>
+             <div>
+                 <input type="radio"  name="format" id="arte" value="arte" checked>
+                 <label for="arte">Karate shotokan</label>
+               </div>
+               <div>
+                 <input type="radio"  name="format" id="arte1" value="arte1" >
+                 <label for="arte1">Kung fu shoalin</label>
+               </div>
+               <div>
+                 <input type="radio"  name="format" id="arte2" value="arte2">
+                 <label for="arte2">Tai chi chuan</label>
+               </div>
+             <br>
+             <hr>
+             <label for="pergunta3">Para além das artes marciais, o que se mais se destaca na cidade?</label>
+             <div>
+                 <input type="checkbox" name="format" id="temo" size="40px" value="temo" checked>
+                 <label for="arte">Templos</label>
+               </div>
+               <div>
+                 <input type="checkbox" name="format" id="temo1" value="temo1">
+                 <label for="temo1">Montanhas</label>
+               </div>
+               <div>
+                 <input type="checkbox" name="format" id="temo2" value="temo2">
+                 <label for="temo2">Cultura</label>
+               </div>
+               <br>
+               <hr>
+               <label for="pergunta4">Em que data o Monumento Histórico de Dengfeng foi inscrito na UNESCO </label>
+               <input type="date" id="pergunta4" name="pergunta4"  required>
+               <hr>
+               <label for="pergunta5">Escolha as cores que representam o país de dengfeng</label>
+               <div>
+                 <input type="color" id="cor1" name="cor1"
+                        value="#FFFFFF">
+                 <label for="cor1">Primeira</label>
+             </div>
+             <br>
+             <div>
+                 <input type="color" id="cor2" name="cor2"
+                        value="#FFFFFF">
+                 <label for="cor2">Segunda</label>
+             </div>
+             <br>
+             <hr>
+             <label for="pergunta6">Quantos km tem a área de dengfeng</label>
+             <input type="number" id="pergunta6" name="pergunta6" required>
+             <hr>
+             <label for="pergunta6">A Dengfeng está a ____m acima do nível do mar (min:0 e max: 500)</label>
+             <input type="range" min="0" max="500" step="0.5" list="tickmarks">
+             <datalist id="tickmarks">
+               <option value="0" label="0">
+               <option value="50">
+               <option value="100">
+               <option value="150">
+               <option value="200">
+               <option value="250" label="250">
+               <option value="300">
+               <option value="350">
+               <option value="400">
+               <option value="450">
+               <option value="500" label="500">
+             </datalist>
+             <br><br>
+             <input type="submit" method="post" action="elisa.m.morgado@gmail.com" value="Submit">
+            </fieldset>
+          </form>
+   
+        </div>
+
+
+        
+        <div id="aside">
+            <aside>
+                <img class="foto1" src="img/elisa1.jpeg">
+                <img class="foto2" src="img/elisa2.jpeg">
+            </aside>
+            <aside class="apresent">
+              <p style="margin-left: 107px;"><b>"Life on Earth is dependent on nature to survive.</b></p>
+              <p style="margin-left: 112px;"><b>Ecological balance comes naturally.</b></p>
+              <p style="margin-left: 112px;"><b>Planting trees and flowers can maintain a good environment.</b></p>
+              <p style="margin-left: 112px;"><b>Reproduction of saplings can benefit the earth."</b></p>
+            </aside>
+     
+        </div>
+
+        
+
+        <div id="content2">
+            <svg  width="1184" height="60">
+                <image href="img/menu.jpg" width="100%" height="100%">
+                </image>
+                <a href="https://lab1em.herokuapp.com/lab3/index.html">
+                    <polygon opacity="0.0" points="0,0 198,1 198,39 0,39" />
+                    <rect x="-15" y="50" width="200" height="10">
+                        <animate id="a1" attributeName="fill" from="red" to="blue" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/local.html">
+                    <polygon opacity="0.0" points="201,0 406,1 406,37 201,37" />
+                    <rect x="185" y="50" width="200" height="10">
+                        <animate id="a2" attributeName="fill" from="blue" to="yellow" begin="a1.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/multimedia.html">
+                    <polygon opacity="0.0" points="411,1 607,1 607,39 411,39" />
+                    <rect x="385" y="50" width="200" height="10">
+                        <animate id="a3" attributeName="fill" from="yellow" to="pink" begin="a2.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/info.html">
+                    <polygon opacity="0.0" points="614,0 827,1 827,40 614,40" />
+                    <rect x="585" y="50" width="208" height="10">
+                        <animate id="a4" attributeName="fill" from="pink" to="brown" begin="a3.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/quizz.html">
+                    <polygon opacity="0.0" points="831,1 931,1 931,39 831,39" />
+                    <rect x="793" y="50" width="100" height="10">
+                        <animate id="a5" attributeName="fill" from="brown" to="purple" begin="a4.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/comentarios.html">
+                    <polygon opacity="0.0" points="936,1 1152,1 1152,40 936,40" />
+                    <rect x="893" y="50" width="210" height="10">
+                        <animate id="a6" attributeName="fill" from="purple" to="green" begin="a5.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/index.html">
+                    <polygon opacity="0.0" points="1156,1 1249,1 1249,40 1156,40" />
+                    <rect x="1103" y="50" width="100" height="10">
+                        <animate id="a7" attributeName="fill" from="green" to="blue" begin="a6.end" dur="10s" />
+                    </rect>
+                </a>
+        
+            </svg>
+     
+        </div>
+
+        
+        
+        <footer>Elisa Morgado | 21801685 | Universidade Lusofona | 3ºano</footer>
+      </div>
+ </main>
+ </body>
+</html>

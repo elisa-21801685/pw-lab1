@@ -1,0 +1,348 @@
+<link rel="stylesheet" href="estilos.css">
+<!DOCTYPE html>
+<html lang="pt">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Elisa Morgado">
+        <meta name="keywords" content="dengfeng, programação web">
+        <meta name="description" content="Website sobre Dengfeng">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
+        <title>DENGFENG</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cambo&family=Satisfy&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <style>
+        
+            h1 {
+            color: white;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 30px;
+            font-family: 'Ubuntu Condensed', sans-serif;
+            }
+
+            * {
+               font-family: 'Cambo', serif;
+              }
+
+            footer{
+                font-family: 'Satisfy', cursive;
+            }
+
+            [class|=cloud] {
+                border: 2px solid rgb(43, 236, 227);
+
+            
+            }
+
+            [target$="pontos"] {
+                background-color: rgba(224, 204, 93, 0.747);
+            }
+
+            .container {
+               display: grid;
+               height: 100vh;
+               grid-template-columns: 1fr 1fr 1fr 1fr;
+               grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+               grid-template-areas:
+                "nav nav nav nav"
+                "main main main sidebar"
+                "content1 content1 content2 content2"
+                "aside aside aside aside"
+                "content4 content4 content4 content4"
+                "footer footer footer footer";
+               grid-gap: 0.2rem;
+            }
+
+            nav {
+                background:  rgb(67, 92, 138);
+                grid-area: nav;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                height: 100px;
+                position: sticky;
+                top: 0px;
+            }
+
+            .imagem300{
+                margin-left: -10px;
+                margin-top: 100px;
+            }
+
+            .mapasvg{
+                width: 600px; 
+                height: 450px;
+                margin-left: 10px;
+                margin-top: 20px;
+            }
+
+            .mapa{
+                margin-left: 300px;
+            }
+
+            main {
+                grid-area: main;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                background-color:#c2f8c9ce;
+            }
+
+            #sidebar {
+                background-color:#a6d6ac;
+                grid-area: sidebar;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+            }
+
+            #content1 {
+                background-color: rgba(207, 187, 255, 0.911);
+                grid-area: content1;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                height: 500px;
+            }
+
+            #content2 {
+                background-color: rgba(207, 187, 255, 0.911);
+                grid-area: content2;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+            
+            }
+            
+
+
+            @media only screen and (max-width: 550px) {
+            .container {
+
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+                grid-template-areas:
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "content1"
+                    "content2"
+                    "aside"
+                    "content4"
+                    "footer";
+            }
+
+
+            nav {
+                background:  rgb(67, 92, 138);
+                grid-area: nav;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                height: 200px;
+                position: sticky;
+                top: 0px;
+            }
+
+
+            .flex-container {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                margin-left: 9px;
+                text-align: center; 
+            }
+
+            .imagem300{
+                margin-top: 20px;
+                margin-left: 100px;
+
+            }
+
+            .mapasvg{
+                width: 600px; 
+                height: 450px;
+                margin-left: 16px;
+                margin-top: 20px;
+            }
+
+            .mapa{
+               margin-left: 105px;
+            }
+
+            .foto1{
+                width: 120px;
+                height: 160px;
+                margin-left: 15px;
+                margin-top: 50px;
+                
+            }
+
+            .foto2{
+                display: none;
+                
+            }
+
+            .apresent{
+                margin-left: 70px;
+                margin-top: -150px;
+            }
+
+            .img300{
+                margin-left: 80px;
+                margin-top: 10px;
+            }
+
+
+            h1 {
+                color: white;
+                margin-left: 250px;
+                margin-top: 20px;
+                font-size: 30px;
+            }
+
+
+            #content4{
+                display: none;
+            }
+
+
+        }
+           
+        </style>
+     </head>
+     <div class="container">
+        <nav>
+            <h1>DENGFENG</h1>
+
+            <div class="flex-container">
+              <div>
+                <a href= index.html ><i class="material-icons">bookmark</i>Introdução | </a>
+                <a href= local.html ><i class="material-icons">pin_drop</i><b>Localização | </b></a>
+                <a href= multimedia.html ><i class="material-icons">photo_album</i>Multimédia | </a>
+                <a href = info.html ><i class="material-icons">info</i>Informações | </a>
+              </div>
+              <div>
+               <a href = quizz.html ><i class="material-icons">games</i>Quizz | </a>
+               <a href = comentarios.html ><i class="material-icons">edit</i>Comentários |</a>
+               <a href = html5-css.html ><i class="material-icons">code</i>Html5 e Css |</a>
+              </div>
+              <div>
+              <a href = ../index.html ><i class="material-icons">home</i>Home</a>
+              </div>
+            </div>        
+        </nav>
+
+        <main>
+            <h3>LOCALIZAÇÃO</h3>
+            <p style="margin-left: 20px;">Dengfeng é uma cidade-condado em Zhengzhou, província de Henan, na China. Na antiguidade era chamada de Yangcheng. 
+      Dengfeng estende-se por uma área de 1.220 km e tem uma população de 630.000 habitantes.</p>
+            
+      <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210621.74558335976!2d112.88384186563395!3d34.42764986352783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35d7b5ea78aea521%3A0x22c1e5efcae08c61!2sDengfeng%2C%20Zhengzhou%2C%20Hon%C3%A3%2C%20China!5e0!3m2!1spt-PT!2spt!4v1614343783048!5m2!1spt-PT!2spt" 
+      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         <br>
+         <br>
+        
+        </main>
+        <div id="sidebar">
+            <figure>
+                <img class = "imagem300" src="img/300px.jpg" >
+            </figure>
+        </div>
+
+        <div id="content1">
+            <img class="mapasvg" src="img/Imagem1.svg" alt="mapa">
+
+           <div style="margin-top: -370px; margin-left: 220px;">
+           <a href="img/ponto1.jpg" target="pontos" > <img  width="30px" height="50px" src="img/pin.png" alt="local"></img> </a> 
+           </div>
+
+           <div style="margin-top: -68px; margin-left: 282px;">
+           <a href="img/ponto2.jpg" target="pontos" ><img  width="30px" height="50px" src="img/pin.png" alt="local1"></img> </a> 
+           </div>
+
+          <div style="margin-top: -30px; margin-left: 303px;">
+          <a href="img/ponto3.jpg" target="pontos" ><img  width="30px" height="50px" src="img/pin.png" alt="local1"></img> </a> 
+          </div>
+
+          <div style="margin-top: 78px; margin-left: 412px;">
+          <a href="img/ponto4.jpg" target="pontos" ><img  width="30px" height="50px" src="img/pin.png" alt="local1"></img> </a> 
+          </div>
+
+       </div>
+
+        <div id="content2">
+            <iframe height="350px" width="500px" name="pontos" style="margin-left: 100px; margin-top: 70px;" frameborder="0"></iframe>
+        </div>
+        
+        <div id="aside">
+            <aside>
+                <img class="foto1" src="img/elisa1.jpeg">
+                <img class="foto2" src="img/elisa2.jpeg">
+            </aside>
+            <aside class="apresent">
+                <p style="margin-left: 107px;"><b>"Life on Earth is dependent on nature to survive.</b></p>
+                <p style="margin-left: 112px;"><b>Ecological balance comes naturally.</b></p>
+                <p style="margin-left: 112px;"><b>Planting trees and flowers can maintain a good environment.</b></p>
+                <p style="margin-left: 112px;"><b>Reproduction of saplings can benefit the earth."</b></p>
+            </aside>
+     
+        </div>
+
+        <div id="content4">
+            <svg  width="1184" height="60">
+                <image href="img/menu.jpg" width="100%" height="100%">
+                </image>
+                <a href="https://lab1em.herokuapp.com/lab3/index.html">
+                    <polygon opacity="0.0" points="0,0 198,1 198,39 0,39" />
+                    <rect x="-15" y="50" width="200" height="10">
+                        <animate id="a1" attributeName="fill" from="red" to="blue" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/local.html">
+                    <polygon opacity="0.0" points="201,0 406,1 406,37 201,37" />
+                    <rect x="185" y="50" width="200" height="10">
+                        <animate id="a2" attributeName="fill" from="blue" to="yellow" begin="a1.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/multimedia.html">
+                    <polygon opacity="0.0" points="411,1 607,1 607,39 411,39" />
+                    <rect x="385" y="50" width="200" height="10">
+                        <animate id="a3" attributeName="fill" from="yellow" to="pink" begin="a2.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/info.html">
+                    <polygon opacity="0.0" points="614,0 827,1 827,40 614,40" />
+                    <rect x="585" y="50" width="208" height="10">
+                        <animate id="a4" attributeName="fill" from="pink" to="brown" begin="a3.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/quizz.html">
+                    <polygon opacity="0.0" points="831,1 931,1 931,39 831,39" />
+                    <rect x="793" y="50" width="100" height="10">
+                        <animate id="a5" attributeName="fill" from="brown" to="purple" begin="a4.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/comentarios.html">
+                    <polygon opacity="0.0" points="936,1 1152,1 1152,40 936,40" />
+                    <rect x="893" y="50" width="210" height="10">
+                        <animate id="a6" attributeName="fill" from="purple" to="green" begin="a5.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/index.html">
+                    <polygon opacity="0.0" points="1156,1 1249,1 1249,40 1156,40" />
+                    <rect x="1103" y="50" width="100" height="10">
+                        <animate id="a7" attributeName="fill" from="green" to="blue" begin="a6.end" dur="10s" />
+                    </rect>
+                </a>
+        
+            </svg>
+     
+        </div>
+
+
+        
+        
+        <footer>Elisa Morgado | 21801685 | Universidade Lusofona | 3ºano</footer>
+      </div>
+ </main>
+ </body>
+</html>

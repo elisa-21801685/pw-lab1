@@ -1,0 +1,546 @@
+<link rel="stylesheet" href="estilos.css">
+<!DOCTYPE html>
+<html lang="pt">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Elisa Morgado">
+        <meta name="keywords" content="dengfeng, programação web">
+        <meta name="description" content="Website sobre Dengfeng">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
+        <title>DENGFENG</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cambo&family=Satisfy&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <style>
+            h1{
+              color: white;
+              margin-left: 20px;
+              margin-top: 20px;
+              font-size: 30px;
+              font-family: 'Ubuntu Condensed', sans-serif;
+            }
+
+            * {
+               font-family: 'Cambo', serif;
+              }
+
+            footer{
+                font-family: 'Satisfy', cursive;
+            }
+            .container {
+               display: grid;
+               height: 100vh;
+               grid-template-columns: 1fr 1fr 1fr 1fr;
+               grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+               grid-template-areas:
+                "nav nav nav nav"
+                "main main main sidebar"
+                "content1 content1 content1 content1"
+                "content2 content2 content2 content2"
+                "content3 content3 content3 content3"
+                "aside aside aside aside"
+                "content4 content4 content4 content4"
+                "footer footer footer footer";
+               grid-gap: 0.2rem;
+            }
+
+            .img300{
+              margin-left: -10px;
+              margin-top: 5px;
+            }
+
+            nav {
+                background:  rgb(67, 92, 138);
+                grid-area: nav;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                height: 100px;
+                position: sticky;
+                top: 0px;
+            }
+
+            main {
+                grid-area: main;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                background-color:#c2f6f8ce;
+            }
+
+            #sidebar {
+                background-color:#88eff3ce;
+                grid-area: sidebar;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+            }
+
+            #content1 {
+                background-color: rgb(240, 240, 240);
+                grid-area: content1;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+            }
+
+            #content2 {
+                background-color: rgb(214, 214, 214);
+                grid-area: content2;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+            }
+
+            #content3 {
+                background-color: rgb(182, 182, 182);
+                grid-area: content3;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+            }
+
+            @media only screen and (max-width: 550px) {
+            .container {
+
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+                grid-template-areas:
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "content1"
+                    "content2"
+                    "content3"
+                    "sidebar1"
+                    "aside"
+                    "content4"
+                    "footer";
+            }
+
+            h1 {
+                color: white;
+                margin-left: 190px;
+                margin-top: 20px;
+                font-size: 30px;
+            }
+
+            nav {
+                background:  rgb(67, 92, 138);
+                grid-area: nav;
+                border-radius: var(--main-radius);
+                padding-top: var(--main-padding);
+                height: 200px;
+                position: sticky;
+                top: 0px;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                margin-left: 9px;
+                text-align: center; 
+            }
+
+            span{
+                font-size:40px; 
+                margin-left: 210px;
+            }
+
+            .img300{
+                margin-left: 100px;
+                margin-top: 5px;
+            }
+
+            .foto2{
+                display: none;
+            }
+
+            .foto1{
+                width: 120px;
+                height: 160px;
+                margin-left: 15px;
+                margin-top: 50px;
+                
+            }
+
+            .apresent{
+                margin-left: 70px;
+                margin-top: -150px;
+            }
+
+            #content4{
+              display: none;
+            }
+
+          }
+           
+        </style>
+     </head>
+     <div class="container">
+        <nav>
+            <h1>DENGFENG</h1>
+
+            <div class="flex-container">
+              <div>
+                <a href= index.html ><i class="material-icons">bookmark</i>Introdução | </a>
+                <a href= local.html ><i class="material-icons">pin_drop</i>Localização | </a>
+                <a href= multimedia.html ><i class="material-icons">photo_album</i>Multimédia | </a>
+                <a href = info.html ><i class="material-icons">info</i>Informações | </a>
+              </div>
+              <div>
+               <a href = quizz.html ><i class="material-icons">games</i>Quizz | </a>
+               <a href = comentarios.html ><i class="material-icons">edit</i>Comentários |</a>
+               <a href = html5-css.html ><i class="material-icons">code</i><b>Html5 e Css |</b></a>
+              </div>
+              <div>
+              <a href = ../index.html ><i class="material-icons">home</i>Home</a>
+              </div>
+            </div>        
+        </nav>
+
+        <main>
+            <h3>HTML5 e CSS</h3>
+            <p style="margin-left: 20px;">
+      O HTML5 é a nova versão do HTML4 e um dos seus principais objetivos é facilitar a manipulação dos elementos, possibilitando 
+      o desenvolvedor modificar as características dos objetos de forma não intrusiva, fazendo com que isso fique transparente para 
+      o utilizador final.
+            </p>
+
+            <p style="margin-left: 20px;">
+      
+      CSS significa Cascading Style Sheets, com ênfase em "Style". Enquanto o HTML é usado para estruturar um documento da web 
+      (definindo coisas como manchetes e parágrafos, e permitindo que você incorpore imagens, vídeo e outras mídias), CSS vem e 
+      especifica o estilo do seu documento - layouts de página, cores e fontes são todos determinados com CSS. Pense no HTML 
+      como a base (cada casa tem um) e no CSS como as escolhas estéticas (há uma grande diferença entre uma mansão vitoriana e 
+      uma casa moderna de meados do século).
+            </p>
+            
+        
+        </main>
+        <div id="sidebar">
+            <figure>
+                <img class="img300" src="img/300px.jpg"  >
+            </figure>
+        </div>
+
+        <div id="content1">
+          <table border="1" summary="Tabela" cellpadding="10" cellspacing="2" align="center">
+    
+            <caption>
+                <b>HTML5</b>
+            </caption>
+
+            <colgroup>
+                <col bgcolor="Ivory">
+                <col bgcolor="Ivory">
+                <col bgcolor="Ivory">
+            
+              </colgroup>
+            
+            <thead>
+                    <th colspan="1" style="color: white;" bgcolor="FireBrick">Elementos HTLM5</th>
+                    <th colspan="1" style="color: white;" bgcolor="FireBrick">Usei</th>
+                    <th colspan="1" style="color: white;" bgcolor="FireBrick">Onde Utilizei</th>  
+                    
+            </thead>
+
+             <tbody>
+
+               <tr class="tabelahtml5">
+               <td>header</th>
+               <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+               <td>Este elemento foi utilizado no inicio do programa para introdução do trabalho (menu)</th>
+               </tr>
+
+
+               <tr class="tabelahtml5">
+               <td>nav</td>
+               <td><i class="material-icons " style="color: rgb(82, 230, 126);">mood</i></td>
+               <td>Como a parte do menu apresenta um conjunto de links de navegação, este elemento foi importante</th>
+               </tr>
+
+               <tr class="tabelahtml5">
+               <td>main</td>
+               <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+               <td>Utilizado em todas as páginas HTML para organizar todo o conteúdo principal do documento</th>
+               </tr>
+    
+               <tr class="tabelahtml5">
+               <td>article</td>
+               <td><i class="material-icons" style="color: rgb(230, 82, 82);">mood_bad</i></td>
+               <td style="text-align: center; "><i>Não foi utilizado</i></th>   
+               </tr>
+
+               <tr class="tabelahtml5">
+               <td>section</td>
+               <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+               <td style="text-align: center; ">Usado em todas as páginas fazendo uma seção, de modo a organizar</th>      
+               </tr>
+
+               <tr class="tabelahtml5">
+               <td>aside</td>
+               <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+               <td style="text-align: center; "><i>Este elemento foi usado para colocar as minhas fotos e um pequeno texto no final de todas as páginas</i></th>
+               </tr>
+
+               <tr class="tabelahtml5">
+               <td>footer</td>
+               <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+               <td style="text-align: center; ">Utilizado como rodapé em todas as páginas, dando a informação da auditoria</th>
+               </tr>
+  
+               <tr class="tabelahtml5">
+               <td>details</td>
+               <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+               <td style="text-align: center; ">Ajuda me a mostrar/esconder os detalhes sobre as minhas fotos</th>
+               </tr>
+    
+               <tr class="tabelahtml5">
+               <td>summary</td>
+               <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+               <td style="text-align: center; ">Este elemento foi utilizado em conjunto com o details para definir o "titulo" dos detalhes</th>
+               </tr>
+
+               <tr class="tabelahtml5">
+               <td>meter</td>
+               <td><i class="material-icons" style="color: rgb(230, 82, 82);">mood_bad</i></td>
+               <td style="text-align: center; "><i>Não foi utilizado</i></th>
+               </tr>
+
+               <tr class="tabelahtml5">
+               <td>progess</td>
+               <td><i class="material-icons" style="color: rgb(230, 82, 82);">mood_bad</i></td>
+               <td style="text-align: center; "><i>Não foi utilizado</i></th>
+               </tr>
+
+               <tr class="tabelahtml5">
+               <td>abbr</td>
+               <td><i class="material-icons" style="color: rgb(230, 82, 82);">mood_bad</i></td>
+               <td style="text-align: center; "><i>Não foi utilizado</i></th>
+               </tr>
+
+               <tr class="tabelahtml5">
+               <td>address</td>
+               <td><i class="material-icons" style="color: rgb(230, 82, 82);">mood_bad</i></td>
+               <td style="text-align: center; "><i>Não foi utilizado</i></th>
+               </tr>
+
+             </tbody>
+
+           </table>
+
+           <br>
+           <br>
+
+          </div>
+
+          <div id="content2">
+            <table border="1" summary="Tabela" cellpadding="10" cellspacing="2" align="center">
+    
+              <caption>
+                  <b>CSS</b>
+              </caption>
+
+              <colgroup>
+                  <col bgcolor="PeachPuff">
+                  <col bgcolor="Ivory">
+                  <col bgcolor="LemonChiffon">
+                  
+                  
+                </colgroup>
+              
+              <thead>
+                      <th colspan="1" style="color: white;" bgcolor="Crimson">Elementos CSS</th>
+                      <th colspan="1" style="color: white;" bgcolor="Crimson">Usei</th>
+                      <th colspan="1" style="color: white;" bgcolor="Crimson">Onde Utilizei</th>  
+                      
+              </thead>
+  
+               <tbody>
+  
+                 <tr>
+                 <td>universal</th>
+                 <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+                 <td>Com este elemento coloquei nas página todas o mesmo tipo de letra, o que fica mais fazer com ele</th>
+                 </tr>
+  
+  
+                 <tr>
+                 <td>tipo</td>
+                 <td><i class="material-icons " style="color: rgb(82, 230, 126);">mood</i></td>
+                 <td style="text-align: center;">Utilizada nos hs para editar os titulos</th>
+                 </tr>
+  
+                 <tr>
+                 <td>classe</td>
+                 <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+                 <td style="text-align: center;">Este elemento ajuda a editar a página</th>
+                 </tr>
+      
+                 <tr>
+                 <td>id</td>
+                 <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+                 <td style="text-align: center; "><i>Muito semelhante à classe, fazendo as mesmas edições</i></th>   
+                 </tr>
+  
+                 <tr>
+                 <td>atributo</td>
+                 <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+                 <td style="text-align: center; ">Usado nas imagens e textos, de modo a personalizar</th>      
+                 </tr>
+  
+                 <tr>
+                 <td>pseudo-classe</td>
+                 <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+                 <td style="text-align: center; "><i>Edição das letras, textos de descrições ou menu</i></th>
+                 </tr>
+  
+                 <tr>
+                 <td>pseudo-elemento</td>
+                 <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood</i></td>
+                 <td style="text-align: center; ">Utilizado para a formatação das tabelas</th>
+                 </tr>
+    
+  
+               </tbody>
+  
+          </table>
+
+  
+             <br>
+             <br>
+  
+            </div>
+
+            <div id="content3">
+              <table border="1" summary="Tabela" cellpadding="10" cellspacing="2" align="center">
+    
+                <caption>
+                    <b>Combinadores de seletores</b>
+                </caption>
+
+                <colgroup>
+                    <col bgcolor="PeachPuff">
+                    <col bgcolor="Ivory">
+                    <col bgcolor="LemonChiffon">
+                    
+                    
+                  </colgroup>
+                
+                <thead>
+                        <th colspan="1" style="color: white;" bgcolor="MediumVioletRed">Combinadores de seletores</th>
+                        <th colspan="1" style="color: white;" bgcolor="MediumVioletRed">Usei</th>
+                        <th colspan="1" style="color: white;" bgcolor="MediumVioletRed">Onde Utilizei</th>  
+                        
+                </thead>
+    
+                 <tbody>
+    
+                   <tr>
+                   <td>descendentes</th>
+                   <td><i class="material-icons" style="color: rgb(82, 230, 126);">mood_</i></td>
+                   <td>Usado para o menu (tendo todos as hiperligações lá dentro)</th>
+                   </tr>
+    
+    
+                   <tr>
+                   <td>filhos</td>
+                   <td><i class="material-icons " style="color: rgb(82, 230, 126);">mood_bad</i></td>
+                   <td style="text-align: center; "><i>Não foi utilizado</i></th>
+                   </tr>
+    
+                   <tr>
+                   <td>adjacentes</td>
+                   <td><i class="material-icons" style="color: rgb(230, 82, 82);">mood_bad</i></td>
+                   <td style="text-align: center; "><i>Não foi utilizado</i></th>
+                   </tr>
+        
+                   <tr>
+                   <td>imediatamente adjacentes</td>
+                   <td><i class="material-icons" style="color: rgb(230, 82, 82);">mood_bad</i></td>
+                   <td style="text-align: center; "><i>Não foi utilizado</i></th>   
+                   </tr>          
+    
+                 </tbody>
+    
+    
+            </table>
+  
+    
+               <br>
+               <br>
+    
+              </div>
+
+        
+        <div id="aside">
+            <aside>
+                <img class="foto1" src="img/elisa1.jpeg">
+                <img class="foto2" src="img/elisa2.jpeg">
+            </aside>
+            <aside class="apresent">
+              <p style="margin-left: 107px;"><b>"Life on Earth is dependent on nature to survive.</b></p>
+              <p style="margin-left: 112px;"><b>Ecological balance comes naturally.</b></p>
+              <p style="margin-left: 112px;"><b>Planting trees and flowers can maintain a good environment.</b></p>
+              <p style="margin-left: 112px;"><b>Reproduction of saplings can benefit the earth."</b></p>
+          </aside>
+     
+        </div>
+
+        <div id="content4">
+            <svg  width="1184" height="60">
+                <image href="img/menu.jpg" width="100%" height="100%">
+                </image>
+                <a href="https://lab1em.herokuapp.com/lab3/index.html">
+                    <polygon opacity="0.0" points="0,0 198,1 198,39 0,39" />
+                    <rect x="-15" y="50" width="200" height="10">
+                        <animate id="a1" attributeName="fill" from="red" to="blue" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/local.html">
+                    <polygon opacity="0.0" points="201,0 406,1 406,37 201,37" />
+                    <rect x="185" y="50" width="200" height="10">
+                        <animate id="a2" attributeName="fill" from="blue" to="yellow" begin="a1.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/multimedia.html">
+                    <polygon opacity="0.0" points="411,1 607,1 607,39 411,39" />
+                    <rect x="385" y="50" width="200" height="10">
+                        <animate id="a3" attributeName="fill" from="yellow" to="pink" begin="a2.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/info.html">
+                    <polygon opacity="0.0" points="614,0 827,1 827,40 614,40" />
+                    <rect x="585" y="50" width="208" height="10">
+                        <animate id="a4" attributeName="fill" from="pink" to="brown" begin="a3.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/quizz.html">
+                    <polygon opacity="0.0" points="831,1 931,1 931,39 831,39" />
+                    <rect x="793" y="50" width="100" height="10">
+                        <animate id="a5" attributeName="fill" from="brown" to="purple" begin="a4.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/lab3/comentarios.html">
+                    <polygon opacity="0.0" points="936,1 1152,1 1152,40 936,40" />
+                    <rect x="893" y="50" width="210" height="10">
+                        <animate id="a6" attributeName="fill" from="purple" to="green" begin="a5.end" dur="10s" />
+                    </rect>
+                </a>
+                <a href="https://lab1em.herokuapp.com/index.html">
+                    <polygon opacity="0.0" points="1156,1 1249,1 1249,40 1156,40" />
+                    <rect x="1103" y="50" width="100" height="10">
+                        <animate id="a7" attributeName="fill" from="green" to="blue" begin="a6.end" dur="10s" />
+                    </rect>
+                </a>
+        
+            </svg>
+     
+        </div>
+
+        
+        
+        <footer>Elisa Morgado | 21801685 | Universidade Lusofona | 3ºano</footer>
+      </div>
+ </main>
+ </body>
+</html>
